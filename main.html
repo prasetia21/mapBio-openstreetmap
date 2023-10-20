@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- leaflet css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    />
+
+    <!-- markercluster  -->
+    <link rel="stylesheet" href="./dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="./dist/MarkerCluster.Default.css" />
+
+    <title>Bio Distributor</title>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+          Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+      }
+
+      .container {
+        display: flex;
+        padding: 5px;
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+      }
+
+      .parent {
+        display: grid;
+        grid-template-columns: 0.4fr 1.6fr;
+        grid-template-rows: 0.3fr 1.7fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          ". ."
+          ". .";
+      }
+
+      .div1 {
+        grid-area: 1 / 1 / 3 / 2;
+      }
+      .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+      .div3 {
+       grid-area: 1 / 1 / 3 / 3;
+      }
+
+      .store-list {
+        height: 100vh;
+        overflow: auto;
+        background: whitesmoke;
+      }
+
+      .row {
+        width: 100%;
+      }
+
+      .row h4 {
+        margin-bottom: 10px;
+      }
+
+      .search-tip b {
+        color: #fff;
+      }
+
+      .search-tip {
+        white-space: nowrap;
+      }
+
+      .search-tip b {
+        display: inline-block;
+        padding: 0 4px;
+        margin-left: 4px;
+      }
+
+      .auto-search-wrapper {
+        display: block;
+        position: relative;
+        width: 100%;
+      }
+
+      .loupe input {
+        padding: 12px 45px 12px 35px;
+      }
+      .auto-search-wrapper input {
+        border: 1px solid #d7d7d7;
+        box-shadow: none;
+        box-sizing: border-box;
+        font-size: 16px;
+        padding: 12px 45px 12px 10px;
+        width: 100%;
+      }
+
+      .auto-search-wrapper.loupe::before {
+        filter: invert(60%);
+      }
+      .loupe::before {
+        background-image: var(--loupe-icon);
+        bottom: 0;
+        content: "";
+        height: 17px;
+        left: 10px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        width: 17px;
+      }
+
+      #map {
+        width: 100%;
+        height: 100%;
+      }
+      .store-list .heading {
+        background: #00337c;
+        color: #fff;
+      }
+      .store-list .heading h2 {
+        padding: 1rem;
+      }
+      ::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+        border-left: 0;
+        background: rgba(0, 0, 0, 0.1);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #ff6900;
+        border-radius: 0;
+      }
+      .store-list ul.list {
+        padding: 0 1rem;
+        list-style-type: none;
+      }
+      .store-list .shop-item {
+        margin: 1rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 1rem;
+      }
+      .store-list li:last-child .shop-item {
+        border: none;
+      }
+      .store-list .shop-item a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #ff6900;
+        font-weight: 700;
+      }
+      .store-list .shop-item p {
+        font-size: 14px;
+        color: #404040;
+      }
+      .leaflet-popup-content-wrapper {
+        padding: 0;
+        overflow: hidden;
+      }
+      .leaflet-popup-content-wrapper .leaflet-popup-content {
+        margin: 0;
+      }
+      .leaflet-popup-content-wrapper h4 {
+        padding: 16px;
+        background: #00337c;
+        color: #fff;
+        font-size: 16px;
+      }
+      .leaflet-popup-content-wrapper p {
+        padding: 0 16px;
+        font-size: 14px;
+        margin-bottom: 14px;
+      }
+      .leaflet-popup-content-wrapper .leaflet-popup-content .phone-number {
+        padding: 16px;
+        padding-top: 0;
+      }
+      .leaflet-popup-content-wrapper .leaflet-popup-content .phone-number a {
+        color: #00337c;
+        font-size: 14px;
+      }
+
+      .title-item {
+        margin: 1rem 0rem 0rem 0rem;
+        padding-left: 1rem;
+        color: #00337c;
+      }
+
+      .form-search {
+        width: 340px;
+        padding: 0rem 1rem 1rem 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .btn {
+        display: inline-block;
+        background: transparent;
+        color: inherit;
+        font: inherit;
+        border: 0;
+        outline: 0;
+        padding: 0;
+        transition: all 200ms ease-in;
+        cursor: pointer;
+      }
+      .btn--primary {
+        background: #7f8ff4;
+        color: #fff;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        padding: 12px 36px;
+      }
+      .btn--primary:hover {
+        background: #6c7ff2;
+      }
+      .btn--primary:active {
+        background: #7f8ff4;
+        box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+      }
+      .btn--inside {
+        margin-left: -110px;
+      }
+
+      .form__field {
+        width: 100%;
+        background: #fff;
+        color: #a3a3a3;
+        font: inherit;
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+        border: 0;
+        outline: 0;
+        padding: 15px 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="div1">
+        <div class="store-list">
+          <div class="heading">
+            <h2>Bio Service Point</h2>
+          </div>
+          <div>
+            <!-- <p class="title-item">Cari Lokasi Bio Service Point</p>
+                <div class="form-search">
+                    <input type="text" class="form__field" placeholder="Masukkan Alamat Toko..." />
+                    <button type="button" class="btn btn--primary btn--inside uppercase">Cari</button>
+                </div> -->
+
+            <ul class="list"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="div2">
+        <div class="container">
+          <div class="row">
+            <h1>List Distributor Bioindustries</h1>
+            <!-- <div class="auto-search-wrapper loupe max-height">
+              <input
+                type="text"
+                autocomplete="off"
+                id="multi-layer-serch"
+                placeholder="enter the letter"
+              />
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="div3">
+        <div id="map"></div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- geojson data  -->
+<script src="./stores.js"></script>
+<script src="./agent.js"></script>
+
+<!-- leaflet js  -->
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+
+<!-- markercluster  -->
+<script src="./dist/leaflet.markercluster.js"></script>
+
+<script>
+  // config map
+  let config = {
+    minZoom: 6,
+    maxZoom: 18,
+  };
+  // magnification with which the map will start
+  const zoom = 6;
+  // coordinates
+  const lat = -6.530694950992132;
+  const lng = 109.88119593819042;
+ 
+  const map = L.map("map", config).setView([lat, lng], zoom);
+
+  const osm = L.tileLayer(
+    "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {
+      maxZoom: 19,
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }
+  ).addTo(map);
+
+  const geojsonMarkerOptions = {
+    radius: 8,
+    fillColor: "#ff7800",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.8,
+  };
+
+  // loading geojson
+  const lightData = L.geoJSON(agent, {
+    onEachFeature: onEachFeatureAgent,
+    pointToLayer: function (feature, latlng) {
+      return L.circleMarker(latlng, geojsonMarkerOptions);
+    },
+  });
+
+  const markers = L.markerClusterGroup().addLayer(lightData);
+
+  // marker clustering
+  map.addLayer(markers);
+
+  // Service Point
+  function generateList() {
+    const ul = document.querySelector(".list");
+    storeList.forEach((shop) => {
+      const li = document.createElement("li");
+      const div = document.createElement("div");
+      const a = document.createElement("a");
+      const p = document.createElement("p");
+      a.addEventListener("click", () => {
+        flyToStore(shop);
+      });
+      div.classList.add("shop-item");
+      a.innerText = shop.properties.name;
+      a.href = "#";
+      p.innerText = shop.properties.address;
+
+      div.appendChild(a);
+      div.appendChild(p);
+      li.appendChild(div);
+      ul.appendChild(li);
+    });
+  }
+
+  generateList();
+
+  function makePopupContent(shop) {
+    return `
+    <div>
+        <h4>${shop.properties.name}</h4>
+        <p>${shop.properties.address}</p>
+        <div class="phone-number">
+            <a href="https://wa.me/62${shop.properties.wa}">${shop.properties.phone}</a>
+        </div>
+    </div>
+  `;
+  }
+
+  function makePopupContentAgent(agent) {
+    return `
+    <div>
+        <h4>${agent.properties.name}</h4>
+        <p>${agent.properties.address}</p>
+        <div class="phone-number">
+            <a href="https://wa.me/62${agent.properties.wa}">${agent.properties.phone}</a>
+        </div>
+    </div>
+  `;
+  }
+
+  function onEachFeature(feature, layer) {
+    layer.bindPopup(makePopupContent(feature), {
+      closeButton: false,
+      offset: L.point(0, -8),
+    });
+  }
+
+  function onEachFeatureAgent(feature, layer) {
+    layer.bindPopup(makePopupContentAgent(feature), {
+      closeButton: false,
+      offset: L.point(0, -8),
+    });
+  }
+
+  var myIcon = L.icon({
+    iconUrl: "marker.png",
+    iconSize: [30, 40],
+  });
+
+  const shopsLayer = L.geoJSON(storeList, {
+    onEachFeature: onEachFeature,
+    pointToLayer: function (feature, latlng) {
+      return L.marker(latlng, { icon: myIcon });
+    },
+  });
+  shopsLayer.addTo(map);
+
+  function flyToStore(store) {
+    const lat = store.geometry.coordinates[1];
+    const lng = store.geometry.coordinates[0];
+    map.flyTo([lat, lng], 14, {
+      duration: 3,
+    });
+    setTimeout(() => {
+      L.popup({ closeButton: false, offset: L.point(0, -8) })
+        .setLatLng([lat, lng])
+        .setContent(makePopupContent(store))
+        .openOn(map);
+    }, 3000);
+  }
+</script>
