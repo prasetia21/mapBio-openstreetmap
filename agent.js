@@ -1062,5 +1062,798 @@ const agent = [
           "wa": "81332179798"
         }
       },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.33729955721009, -7.845222699972234]
+        },
+        "properties": {
+          "name": "TB KASONGAN",
+          "address": "Jl. Raya Kasongan, Yogyakarta",
+          "phone": "0813 9260 9095",
+          "wa": "81392609095"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.35865102490746, -7.826129111231714]
+        },
+        "properties": {
+          "name": "TB MORO DADI",
+          "address": "Jl. Bantul Dongkelan, Bantul, Yogyakarta",
+          "phone": "0274 415315",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.36877165600123, -7.873033808228004]
+        },
+        "properties": {
+          "name": "TB DAMAR REJEKI",
+          "address": "Ngasem, Pendowoharjo, Sewon, Bantul, Yogyakarta",
+          "phone": "0813 2262 8855",
+          "wa": "81322628855"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.37454020562531, -7.870418300459564]
+        },
+        "properties": {
+          "name": "TB BAJA MULYA",
+          "address": "Jl. Imogiri Barat, Bantul, Yogyakarta",
+          "phone": "0274 376392",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.3272631106509, -7.841163961086199]
+        },
+        "properties": {
+          "name": "TB EKA JAYA",
+          "address": "Jl. Kasongan – Karangjati, Bantul, Yogyakarta",
+          "phone": "0856 284 525 / 0274 6461361",
+          "wa": "856284525"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.37530191176357, -7.858658320571598]
+        },
+        "properties": {
+          "name": "TB TRI SARI",
+          "address": "Jl. Imogiri KM.5, Tlanjuk, Bangunharjo, Sewon, Bantul, Yogyakarta 55188",
+          "phone": "0274 445525",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.39123272948751, -7.871686694840013]
+        },
+        "properties": {
+          "name": "TB SATRIA JAYA",
+          "address": "Jl. Imogiri Timur KM.12, Desa Trimulyo, Jetis, Bantul, Yogyakarta 55781",
+          "phone": "0856 4337 0781",
+          "wa": "85643370781"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.35341452033447, -7.8605360001592715]
+        },
+        "properties": {
+          "name": "TB SENDANG MULYO",
+          "address": "Jl. Paris KM.7, Cabean, Sewon, Bantul, Yogyakarta 55188",
+          "phone": "0274 445402",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.59646002766024, -7.63382079945883]
+        },
+        "properties": {
+          "name": "TB MULYO LESTARI",
+          "address": "Jl. Surobayan KM.1, Kuruboyo Caturharjo, Pandak, Bantul, Yogyakarta 55761",
+          "phone": "0812 8505 2268",
+          "wa": "81285052268"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.34519685750388, -7.841954881131454]
+        },
+        "properties": {
+          "name": "TB AGUNG REJEKI",
+          "address": "Jl. Bantul KM.7, Pendowoharjo, Sewon, Bantul, Yogyakarta 55186",
+          "phone": "0274 6466271 / 0856 2896 859",
+          "wa": "8562896859"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.32684147126979, -7.825806413810905]
+        },
+        "properties": {
+          "name": "TB BIBIS JAYA",
+          "address": "Jl. Bibis, Bangunjiwo, Kasihan, Bantul, Yogyakarta 55184",
+          "phone": "0274 8506737 / 0878 3931 6831",
+          "wa": "87839316831"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.36565132580365, -7.827100133341046]
+        },
+        "properties": {
+          "name": "TB CENTRAL",
+          "address": "Jl. Parangtritis KM.4,2 No.208, Bangunharjo, Sewon, Bantul, Yogyakarta 55188",
+          "phone": "0812 2758 815",
+          "wa": "8122758815"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.36419936896266, -7.8422063539298765]
+        },
+        "properties": {
+          "name": "TB SEWON BARU MAKMUR",
+          "address": "Jl. Parangtritis KM.5,6, Panggungharjo, Sewon, Bantul, Yogyakarta 55188",
+          "phone": "0851 0043 3365",
+          "wa": "85100433365"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.41015285357753, -7.791880412056701]
+        },
+        "properties": {
+          "name": "YOGA ROMERO",
+          "address": "Jl. Ringroad Timur No.87, Banguntapan, Bantul, Yogyakarta 55198",
+          "phone": "0812 2722 7099",
+          "wa": "81227227099"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.31968422127285, -7.834943090418119]
+        },
+        "properties": {
+          "name": "TB BAROKAH JAYA",
+          "address": "Gendeng RT 4, Bangunjiwo, Kasihan, Bantul, Yogyakarta 55188",
+          "phone": "0856 2896 859",
+          "wa": "8562896859"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.33639736204958, -7.845055072232289]
+        },
+        "properties": {
+          "name": "CV ANALIS WIJAYA GROUD",
+          "address": "Gedongan RT 06 Bangunjiwo, Kasihan, Bantul, Yogyakarta",
+          "phone": "0858 7930 6808",
+          "wa": "85879306808"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.26215727483809, -7.814080270548997]
+        },
+        "properties": {
+          "name": "TB GANGSAR",
+          "address": "Jl Gesikan KM 1,Semampir, Argorejo, Sedayu, Bantul, Yogyakarta",
+          "phone": "0878 3431 9754",
+          "wa": "87834319754"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.37383444953967, -7.830122601951532]
+        },
+        "properties": {
+          "name": "TB ANUGERAH JAYA",
+          "address": "Jl. Imogiri Barat Km 4 No.157, Bantul, Yogyakarta",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.35401888498174, -7.9036013460730326]
+        },
+        "properties": {
+          "name": "TB. Sari Luhut",
+          "address": "Jl. Parangtritis Km 12,5 (Depan makam pahlawan), Bantul, Yogyakarta",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.37086584346788, -7.896995006039891]
+        },
+        "properties": {
+          "name": "TB. Amanah Semin",
+          "address": "Jl. Raya Semin ( Selatan kantor kecamatan )",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.4680984244213, -7.914047586383258]
+        },
+        "properties": {
+          "name": "TB. Utama",
+          "address": "Temuwuh RT. 01 Dlingo ( Jl pathuk-Dlingo), Bantul, Yogyakarta",
+          "phone": "0822 2308 4437",
+          "wa": "82223084437"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.47051777532052, -7.919999704443766]
+        },
+        "properties": {
+          "name": "TB. YUNI",
+          "address": "KLEPU RT. 01, TEMUWUH, DLINGO, BANTUL, YOGYAKARTA",
+          "phone": "0812 796 277",
+          "wa": "812796277"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.39191829863951, -7.870525659565386]
+        },
+        "properties": {
+          "name": "REJOSARI",
+          "address": "JL. IMOGIRI TIMUR KM 13, TRIMULYO, JETIS, BANTUL, YOGYAKARTA",
+          "phone": "0877 3927 2384",
+          "wa": "87739272384"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.41249010549055, -7.878168961635862]
+        },
+        "properties": {
+          "name": "UTAMA HADI KASIM",
+          "address": "JL. SEGOROYOSO KLORON, PLERET, BANTUL, YOGYAKARTA",
+          "phone": "0274 441235",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.36934403944935, -7.812694373578311]
+        },
+        "properties": {
+          "name": "TB MITRA USAHA u.p. BP HARI",
+          "address": "Jl. Brigjen Katamso 167, Keparakan, Kec. Mergangsan, Kota Yogyakarta, 55131",
+          "phone": "0888 6813 131",
+          "wa": "8886813131"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.54364935194906, -7.8835158220362]
+        },
+        "properties": {
+          "name": "TB. Maju Jaya",
+          "address": "Jl. Wonosari, Pathuk, Gunung Kidul, Yogyakarta",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.4753772449958, -8.034959028974509]
+        },
+        "properties": {
+          "name": "TB. Berkah",
+          "address": "Pucung giri sekar Rt 7, Panggang, Gunung Kidul, Yogyakarta",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.51426195155355, -7.934046316643617]
+        },
+        "properties": {
+          "name": "TB. LINTANG",
+          "address": "JL PLAYEN – DLINGO KM 4,5 GEMBUL GETAS, PLAYEN, GUNUNG KIDUL, YOGYAKARTA",
+          "phone": "0878 3931 3066",
+          "wa": "87839313066"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.5441934545532, -8.013564103300352]
+        },
+        "properties": {
+          "name": "HRH",
+          "address": "MULUSAN, PLAYEN, GUNUNG KIDUL, YOGYAKARTA",
+          "phone": "0818 0400 6321",
+          "wa": "81804006321"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.71922344946508, -8.163330693146666]
+        },
+        "properties": {
+          "name": "MENTES",
+          "address": "JEPITU, GIRISUBO, GUNUNG KIDUL, YOGYAKARTA",
+          "phone": "0813 2942 9783",
+          "wa": "81329429783"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.12196193310258, -7.6690218134344965]
+        },
+        "properties": {
+          "name": "HARAPAN JAYA",
+          "address": "NGAGLIK PAGER HARJO, SAMIGALUH, KULON PROGO, YOGYAKARTA",
+          "phone": "0823 2496 2333",
+          "wa": "82324962333"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.45279472211207, -7.780596209197883]
+        },
+        "properties": {
+          "name": "TRANS HOME",
+          "address": "Jl. Raya Solo – Yogyakarta No.Km, RW.11, Mangunan, Kalitirto, Kec. Berbah, Kabupaten Sleman, Daerah Istimewa Yogyakarta",
+          "phone": "0877 0877 7989",
+          "wa": "87708777989"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.43526387717779, -7.7581941192751485]
+        },
+        "properties": {
+          "name": "HOBIKAYU SHOP",
+          "address": "Maguwoharjo, Depok, Sleman",
+          "phone": "0812 4219 3922",
+          "wa": "81242193922"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.47579132649363, -7.764554892270449]
+        },
+        "properties": {
+          "name": "TB PANCA BANGUNAN",
+          "address": "Jl. Raya Solo KM.12,5, Kalasan, Kalitirto, Berbah, Sleman, Yogyakarta",
+          "phone": "0274 496658",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.27665671567716, -7.762707294985904]
+        },
+        "properties": {
+          "name": "TB ENGGAL MAREM",
+          "address": "Jl. Godean KM.12, Berjo Luhur, Sayegan, Sidoluhur, Godean, Sleman, Yogyakarta 55264",
+          "phone": "0851 0226 6789",
+          "wa": "85102266789"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.26813378318188, -7.758768863030271]
+        },
+        "properties": {
+          "name": "TB MITRA MANDIRI",
+          "address": "Jl. Godean Ngapok, Ds Bletuk Sidoharjo, Godean, Sleman, Yogyakarta 55264",
+          "phone": "0851 0042 7025",
+          "wa": "85100427025"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.39866542467436, -7.728425200198356]
+        },
+        "properties": {
+          "name": "TB LILIK",
+          "address": "Jl. Kaliurang Km 9,3 Gendok, Sinduharj, Ngaglik, Sleman, Yogyakarta",
+          "phone": "0877 3828 9006",
+          "wa": "87738289006"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.4248514835834, -7.748612420788463]
+        },
+        "properties": {
+          "name": "TB MADANI",
+          "address": "Karangsari RT 06 RW 31 Wedomartani, Ngemplak, Sleman, Yogyakarta",
+          "phone": "0818 464 636",
+          "wa": "818464636"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.28109626428731, -7.721390459827819]
+        },
+        "properties": {
+          "name": "TB SETIA BUDI",
+          "address": "Ngaran, Margokaton, Seyegan, Sleman, Yogyakarta",
+          "phone": "0878 3929 5063 / 0812 2701 6733",
+          "wa": "87839295063"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.30496305887134, -7.76597842831909]
+        },
+        "properties": {
+          "name": "TB HADI DUA",
+          "address": "Jl Godean Km 14, Minggir, Sleman, Yogyakarta",
+          "phone": "0818 0648 3663",
+          "wa": "81806483663"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.42529026972832, -7.743688381823813]
+        },
+        "properties": {
+          "name": "TOKO JATI BELANDA",
+          "address": "Jl. Ringroad Utara No.279, Gorongan, Condong Catur, Sleman, Yogyakarta",
+          "phone": "0857 0141 0653",
+          "wa": "85701410653"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.40139704042363, -7.754323204069003]
+        },
+        "properties": {
+          "name": "TB MURAH BAROKAH",
+          "address": "Jl. Munggur No 164 B, Sanggrahan, Condong Catur, Sleman, Yogyakarta",
+          "phone": "0878 3848 2992",
+          "wa": "87838482992"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.32169316957642, -7.752774787960366]
+        },
+        "properties": {
+          "name": "TOKO BU HARTO",
+          "address": "Jl. Kebon Agung, Cebongan, Sleman, Yogyakarta",
+          "phone": "0274 869321",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.49048588295298, -7.8112879018762005]
+        },
+        "properties": {
+          "name": "TB JAYA MAKMUR",
+          "address": "Jl. Prambanan – Piyungan KM.6 RT.05/RW.06, Sumberharjo, Beloran, Madurejo, Prambanan, Sleman, Yogyakarta 55572",
+          "phone": "0896 4028 5998",
+          "wa": "89640285998"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.42486132605653, -7.750639665763066]
+        },
+        "properties": {
+          "name": "SIMPLY WOOD",
+          "address": "Jl Stadion Karangsari Wedomartani, Maguwoharjo, Sleman",
+          "phone": "0822 1975 205 / 0813 2852 1703",
+          "wa": "81328521703"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.45309596587089, -7.741243640957968]
+        },
+        "properties": {
+          "name": "TB BRINGIN",
+          "address": "Jl. Raya Purwomartani, Purwomartani, Kalasan, Sleman, Yogyakarta 55571",
+          "phone": "0878 3420 1944",
+          "wa": "87834201944"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.4772573468237, -7.729886723139039]
+        },
+        "properties": {
+          "name": "TB KALASAN JAYA",
+          "address": "Jl Pulung, Pondok, Selomartani, Kalasan, Sleman",
+          "phone": "0812 1566 5889",
+          "wa": "81215665889"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.4419764656891, -7.8030885589199634]
+        },
+        "properties": {
+          "name": "TB. Bangun Jaya",
+          "address": "Jl. Berbah (krikilan), Tegaltirto, Berbah, Sleman, Yogyakarta ",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.45685508862098, -7.73552347856124]
+        },
+        "properties": {
+          "name": "TB. GOTONG ROYONG",
+          "address": "DAYAKAN, SANGGRAHAN, PURWOMARTANI, SLEMAN, YOGYAKARTA",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.4419764656891, -7.8030885589199634]
+        },
+        "properties": {
+          "name": "TB. GOTONG ROYONG 3",
+          "address": "KRIKILAN, BERBAH, SLEMAN, YOGYAKARTA ",
+          "phone": "0813 9240 3043",
+          "wa": "81392403043"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.48284615488011, -7.795953777618052]
+        },
+        "properties": {
+          "name": "TB. GOTONG ROYONG 7",
+          "address": "JL. PRAMBANAN PIYUNGAN KM 1, PRAMBANAN, SLEMAN, YOGYAKARTA ",
+          "phone": "0857 0241 1179",
+          "wa": "85702411179"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.34917085305004, -7.752247210959532]
+        },
+        "properties": {
+          "name": "TB. BAROKAH JAYA",
+          "address": "JL. KABUPATEN, SLEMAN, YOGYAKARTA ",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.28521668394555, -7.710426610192223]
+        },
+        "properties": {
+          "name": "TOKO CAT DORA",
+          "address": "Balangan, Minggir, Sleman, Yogyakarta ",
+          "phone": "0852 9244 297",
+          "wa": "8529244297"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.35582998213643, -7.684700882033857]
+        },
+        "properties": {
+          "name": "TB. SISAN DADI",
+          "address": "Jl. Tempel Turi Km 2, Sleman, Yogyakarta",
+          "phone": "0878 3871 8856",
+          "wa": "87838718856"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.44877992518761, -7.742529652777528]
+        },
+        "properties": {
+          "name": "TB. Banaran",
+          "address": "Brominilan, Purwomartani, Kalasan, Sleman, Yogyakarta ",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.30055224147787, -7.72969000417057]
+        },
+        "properties": {
+          "name": "FATTA JAYA",
+          "address": "JL. GODEAN KM 8, YOGYAKARTA ",
+          "phone": "0822 4335 7577",
+          "wa": "82243357577"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.2973216278291, -7.814161346883672]
+        },
+        "properties": {
+          "name": "TB. HADI MULYA",
+          "address": "Jl. Wates Km 9, Pereng Dowo, Balecatur, Gamping, Yogyakarta ",
+          "phone": "0813 9225 8254",
+          "wa": "81392258254"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.2790934524628, -7.761978900356899]
+        },
+        "properties": {
+          "name": "TB. Tridadi",
+          "address": "Jl. Godean Ngapok, Km 17 sleman, Yogyakarta ",
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.43987708805867, -7.751703309229091]
+        },
+        "properties": {
+          "name": "TB. Maju Jaya",
+          "address": "jl. Raya Tajem, Kadisoka, Bokoharjo, Sleman, Yogyakarta ",
+          "phone": "0822 2192 5240",
+          "wa": "82221925240"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.35335227742429, -7.704405639564922]
+        },
+        "properties": {
+          "name": "TB. MULYOREJO",
+          "address": "Beteng Margoagung, Seyegan, Sleman, Yogyakarta",
+          "phone": "0851 0181 0812",
+          "wa": "85101810812"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.46544808967113, -7.697782953182011]
+        },
+        "properties": {
+          "name": "TOKO CAT BANCAT",
+          "address": "jl. Cangkringan Km 6,5, Koroulon, Bimomartani, Ngemplak, Sleman, Yogyakarta ",
+          "phone": "0816 565 343",
+          "wa": "816565343"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [110.43784092319983, -7.68280625113275]
+        },
+        "properties": {
+          "name": "TB. Tulung Agung jaya",
+          "address": "Jl. Grogolan, Umbulmartani, Ngemplak, Sleman, Yogyakarta ",
+          "phone": "0812 2722 1028",
+          "wa": "81227221028"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [12196193310258, -7.6690218134344965]
+        },
+        "properties": {
+          "name": "",
+          "address": "",
+          "phone": "",
+          "wa": ""
+        }
+      },
+
 
 ];
